@@ -3,9 +3,9 @@ function onClick() {
 	var surname = document.querySelector('#surname');
 	var faculty = document.querySelector('#faculty');
 
-	name.style.borderColor = "white";
-	surname.style.borderColor = "white";
-	faculty.style.borderColor = "white";
+	name.classList.remove("error");
+	surname.classList.remove("error");
+	faculty.classList.remove("error");
 
 	const table = document.querySelector('#students');
 	if(name.value!="" && surname.value!="" && faculty.value!=-1){
@@ -20,13 +20,10 @@ function onClick() {
 	}
 	else{
 		if(name.value==""){
-			name.style.borderColor = "red";
+			name.classList.add("error");
 		}
 		if(surname.value==""){
-			surname.style.borderColor = "red";	
-		}
-		if(faculty.value==-1){
-			faculty.style.borderColor = "red";
+			surname.classList.add("error");	
 		}
 	}
 }
