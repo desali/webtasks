@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.left {
+  width: 50%;
+  margin: auto;
+}
+#carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin-bottom: 20px;
+}
+#carousel img {
+  width: 18%;
+}
+.right {
+  width: 40%;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px dashed orange;
+  border-radius: 12%;
+  position: relative;
+}
+#bigImage {
+  text-align: center;
+}
+#bigImagee {
+  width: 55%;
+  margin: 1em;
+}
+.title {
+  text-align: center;
+}
+.accept {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 5em;
+}
+.description {
+  margin-top: 15px;
+}
